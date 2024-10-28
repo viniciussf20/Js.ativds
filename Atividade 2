@@ -1,0 +1,242 @@
+1)let num = Number(prompt('Digite um número: '));
+if (num > 0) {
+    console.log('Positivo');
+} else if (num < 0) {
+    console.log('Negativo');
+} else {
+    console.log('Zero');
+}
+2)let num = Number(prompt('Digite um número: '));
+if (num % 2 == 0) {
+    console.log('Par');
+} else {
+    console.log('Ímpar');
+}
+3)let nota = Number(prompt("Digite uma nota de 0 a 10: "));
+if (nota >= 9 && nota < 11) {
+    document.write("nota A");
+} else if (nota == 8) {
+    document.write("nota B");
+} else if (nota == 7) {
+    document.write("nota C");
+} else if (nota == 6) {
+    document.write("nota D");
+} else if (nota <= 5 && nota >= 0) {
+    document.write("nota F");
+} else {
+    document.write("nota inválida");
+}
+4)let ano = Number(prompt("Digite o ano em que você está: "));
+if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
+    document.write("bissexto");
+} else {
+    document.write("não bissexto");
+}
+5)let num = Number(prompt("Digite um número qualquer: "));
+if (num >= 10 && num <= 20) {   
+    document.write(`o número ${num} entre 10 e 20`);
+} else {
+    document.write(`o número ${num} não está entre 10 e 20`);
+}
+6)let num1 = Number(prompt("Digite um número qualquer: "));
+let num2 = Number(prompt("Digite outro número qualquer: "));
+if (num1 > num2) {
+    document.write(`o número ${num1} é maior que o número ${num2}`);
+} else {
+    document.write(`o número ${num2} é maior que o número ${num1}`);
+}
+7)let char = prompt("Digite um caractere qualquer: ");
+let newchar = char.toLowerCase();
+switch (newchar) {
+    case 'a':
+        document.write("Vogal");
+        break;
+    case 'e':
+        document.write("Vogal");
+        break;
+    case 'i':
+        document.write("Vogal");
+        break;
+    case 'o':
+        document.write("Vogal");
+        break;
+    case 'u':
+        document.write("Vogal");
+        break;
+    default:
+        document.write("Consoante");
+        break;
+}
+8)let num = Number(prompt("Digite um número qualquer: "));
+if (num % 3 == 0 && num % 5 !== 0) {
+    document.write(` o número ${num} é multiplo de 3`);
+} else if (num % 5 == 0 && num % 3 !== 0) {
+    document.write(` o número ${num} é multiplo de 5`);
+} else if (num % 3 == 0 && num % 5 == 0) {
+    document.write(` o número ${num} é multiplo de 3 e 5`);
+} else {
+    document.write(` o número ${num} não é multiplo de 3 ou 5`);
+}
+9)function faseDoDia(hora) {
+    if (hora >= 0 && hora < 6) {
+        return("Boa madrugada");
+    } else if (hora >= 6 && hora < 12) {
+        return("Bom dia");
+    } else if (hora >= 12 && hora < 18) {
+        return("Boa tarde");
+    } else if (hora >= 18 && hora <= 23) {
+        return("Boa noite");
+    } else {
+        return("Hora inválida");
+    }
+}
+const newHora = new Date(). getHours();
+const newFase = faseDoDia(newHora);
+document.write(newFase);
+10)let idade = Number(prompt("Digite sua idade: "));
+if (idade >= 18) {  
+    document.write("Maior de idade");
+} else {
+    document.write("Menor de idade");
+}
+11)let dia = Number(prompt("Digite o número que representa o dia da semana em que você se encontra: "));
+let name = prompt("Me diga o seu nome: ");
+
+switch (dia) {
+    case 0:
+        document.write(`Tenha um ótimo Domingo, ${name}!`);
+        break;
+    case 1:
+        document.write(`Tenha uma ótima Segunda, ${name}!`);        
+        break;
+    case 2: 
+        document.write(`Tenha uma ótima Terça, ${name}!`);
+        break;
+    case 3: 
+        document.write(`Tenha uma ótima Quarta, ${name}!`);
+        break;    
+    case 4: 
+        document.write(`Tenha uma ótima Quinta, ${name}!`);
+        break;
+    case 5: 
+        document.write(`Tenha uma ótima Sexta, ${name}!`);
+        break;
+    case 6: 
+        document.write(`Tenha um ótimo Sabádo, ${name}!`);
+        break;
+    default:
+        document.write(`Dia inválido, ${name}!`);
+        break;
+}
+12)let fruta = Number(prompt("Escolha um número de 1 a 10 que eu direi qual sua fruta premiada!"));
+switch (fruta) {
+    case 1:
+        document.write("Uva");
+        break;
+    case 2:
+        document.write("Laranja");
+        break;
+    case 3:
+        document.write("Macã");        
+        break;
+    case 4:
+        document.write("Banana");
+        break;        
+    case 5:
+        document.write("Tomate (para quem não sabe, tomate é uma fruta! nessa eu te peguei!)");
+        break;
+    case 6:
+        document.write("Morango");
+        break;
+    case 7:
+        document.write("Abacaxi");
+        break;
+    case 8:
+        document.write("Manga");
+        break;
+    case 9:
+        document.write("Kiwi");        
+        break;
+    case 10:
+        document.write("Pera");
+        break;
+    default:
+        document.write("Não temos essa fruta");
+        break;
+}
+13)let num = Number(prompt("Digite um número qualquer: "));
+if (num >= 10 && num <= 20) {   
+    document.write(`o número ${num} entre 10 e 20`);
+} else {
+    document.write(`o número ${num} não está entre 10 e 20`);
+}
+14)let idade = Number(prompt("Digite sua idade: "));
+let votar = idade >= 18 ? "Pode votar" : "Não pode votar";
+document.write(votar);
+15)let idade = Number(prompt("Digite sua idade: "));
+let kidOrSenior = idade <=12 || idade >= 60 ? "Você é uma criança ou um idoso" : "Não, vocÊ não é nem criança e nem idoso";
+ddocument.write(kidOrSenior);
+16)let numDoMes = Number(prompt("Digite o número do mês: "));
+let estacao;
+*** Como é contado mundialmente:
+switch (numDoMes) {
+    case 1:
+    case 2:
+    case 12:
+        estacao = "Inverno";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        estacao = "Primavera";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        estacao = "Verao";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        estacao = "Outono";
+        break;
+    default:
+        estacao = "Mês inválido";
+        break;
+}
+***como é contado no Brasil:
+switch (numDoMes) {
+    case '12':
+    case '1':
+    case '2':
+        estacao = "Verão";
+        break;
+    case '3':
+    case '4':
+    case '5':
+        estacao = "Outono";
+        break;
+    case '6':
+    case '7':
+    case '8':
+        estacao = "Inverno";
+        break;
+    case '9':
+    case '10':
+    case '11':
+        estacao = "Primavera";
+        break;
+    default:
+        estacao = "Mês inválido";
+        break;
+}
+
+document.write(`A estação do ano é: ${estacao}`);
+17)let nota = Number(prompt("Digite uma nota de 0 a 10: "));
+let classificacaoDaNota = nota >= 9 && nota <= 10 ? "Nota A" :
+                            nota === 8 ? "Nota B" :
+                            nota === 7 ? "Nota C" :
+                            nota === 6 ? "Nota D" :
+                            nota <= 5 && nota >= 0 ? "Nota F" :
+                                "Nota inválida";
+document.write(classificacaoDaNota);
